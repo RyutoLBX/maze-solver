@@ -12,9 +12,7 @@ def main():
   num_cells_hori = WINDOW_WIDTH // CELL_SIZE - 1
   num_cells_vert = WINDOW_HEIGHT // CELL_SIZE - 1
 
-  maze: Maze = Maze(
-    10, 10, num_cells_vert, num_cells_hori, CELL_SIZE, CELL_SIZE, win
-  )
+  Maze(10, 10, num_cells_vert, num_cells_hori, CELL_SIZE, CELL_SIZE, win)
 
   win.wait_for_close()
 
