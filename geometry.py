@@ -18,5 +18,5 @@ class Line:
   def get_line(self) -> tuple[int, int, int, int]:
     return (self.p1.x, self.p1.y, self.p2.x, self.p2.y)
 
-  def draw(self, canvas: Canvas, fill_color: str = "black"):
-    canvas.create_line(self.get_line(), fill=fill_color, width=2)
+  def draw(self, canvas: Canvas, fill_color: str = "black", width: int = 2):
+    canvas.create_line(self.get_line(), fill=fill_color, width=width)

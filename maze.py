@@ -116,6 +116,7 @@ class Maze:
 
       self.__break_walls_r(next_index[0], next_index[1])
 
+  # Function to see if a certain direction is visitable, no wall considerations
   def __can_be_visited(self, i: int, j: int, dir: Direction) -> bool:
     match dir:
       case Direction.LEFT:
@@ -129,6 +130,7 @@ class Maze:
       case _:
         return False
 
+  # Function to see if a certain direction is visitable, includng wall considerations
   def __can_be_visited_walls(self, i: int, j: int, dir: Direction) -> bool:
     match dir:
       # LEFT
